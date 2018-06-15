@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{
+text-align:center;
+}
+</style>
+</head>
+<body>
+<h1>글을 남겨 주세요</h1>
+<hr>
+
+<form  method = "post" action = "/mvc/visitor">
+이름 : <input type ="text" name = "name" required >
+<p>남기고자 하는 의견</p>
+<textarea name = "feedback" rows="20" cols="50" required></textarea>
+<br/>
+<input type ="submit" value = "등록">
+<input type = "reset" value="초기화">
+</form>
+
+</body>
+</html>

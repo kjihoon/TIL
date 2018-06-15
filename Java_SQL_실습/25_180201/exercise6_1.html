@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="util.js"></script>
+
+
+</head>
+
+<body>
+
+<section>
+<h1>구구단(인라인)</h1>
+<button onclick="test(1);">1단</button>
+<button onclick="test(2);">2단</button>
+<button onclick="test(3);">3단</button>
+<button onclick="test(4);">4단</button>
+<button onclick="test(5);">5단</button>
+<button onclick="test(6);">6단</button>
+<button onclick="test(7);">7단</button>
+<button onclick="test(8);">8단</button>
+<button onclick="test(9);">9단</button>
+<output id="result"></output>
+</section>
+
+
+<script>
+var target = document.getElementById("result"); 
+
+function test(n) {
+	for(var i=1; i<=n; i++){
+		 target.innerHTML = null;
+		  for(var j=1; j<=9; j++){
+			  target.innerHTML += "<h3>"+i+"X"+j+"="+i*j+"</h3>"; 
+		  }
+		
+		  
+	}
+}
+
+
+</script>
+
+</body>
+</html>

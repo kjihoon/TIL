@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+	function calc(){
+		var result=0;
+		if(arguments.length>0){
+			for (var i=0;i<arguments.length;i++){
+				if (typeof arguments[i]=="number"){					
+					result=result+arguments[i]
+				}else{
+					result="숫자만 입력하세요"
+						break;
+				}
+			}
+		}
+		return result;
+	}
+	document.writeln(calc(1,2,3,4,5))
+</script>
+
+</body>
+</html>

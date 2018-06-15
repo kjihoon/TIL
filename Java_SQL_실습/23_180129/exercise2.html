@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<pre>
+	<script>
+		var num1 = parseInt(prompt());
+		var num2 = parseInt(prompt());	
+		var cal = prompt();
+		
+		var arr = ["+", "-", "*", "/", "%"];
+		var flag=0;
+		while (true){
+			for (var i = 0;i<arr.length;i++){
+				if (arr[i]==cal){
+					flag++;
+				}
+			}
+			if (flag>0)
+				break;
+			alert("+,-,*,/,% 중하나만 써라 연산자만 다시 써주세요!!")
+			cal = prompt();
+		}
+		var result;
+		if (cal=="+"){
+			result=num1+num2;			
+		}else if(cal=="-"){
+			result=num1-num2;			
+		}else if(cal=="*"){
+			result=num1*num2;			
+		}else if(cal=="/"){
+			result=num1/num2;
+		}else if(cal=="%"){
+			result=num1%num2;
+		}
+		document.writeln("<h2>"+num1+"과"+num2+"의"+cal+"연산결과는"+result+"</h2>")
+			
+	
+	</script>
+	</pre>
+</body>
+</html>

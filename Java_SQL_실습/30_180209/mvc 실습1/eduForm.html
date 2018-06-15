@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+
+	text-align:center;	 
+	align: center;
+	vertical-align: middle;
+	border: 2px solid blue;
+	background:linear-gradient(#05FBFF,#1E00FF);
+	border-radius: 20px;
+	padding:20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+form{
+	text-align: left;
+}
+
+h2{
+	text-align: left;
+}
+
+</style>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div>	
+		<h2>성적을 입력하시오.</h2>
+		<hr>
+		<form method="post" action="/mvc/grade1">
+			이름:
+			<input type="text" name ="Name" required><br>
+			평균 점수:
+			<input type="text" name ="Grade" required><br><br>
+			<input type="submit" value ="전송">
+			<input type="reset" value="재작성">
+		</form>	
+	</div>
+
+</body>
+</html>

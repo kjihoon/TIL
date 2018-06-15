@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{	
+	text-align: center;
+}
+
+button{
+	margin-bottom: 20px;	
+	margin-right: 10px;
+	background-color : white;
+	box-shadow: 15px 8px 3px #666666;
+}
+
+</style>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+<h1 style="color : blue">원하는 상품을 클릭해주세요!</h1>
+<hr>
+
+<button id="0"><img src="이미지/다이제.png" width=130 height =130></button>
+<button id="1"><img src="이미지/사탕.png" width=130 height =130></button>
+<button id="2"><img src="이미지/새우깡.png" width=130 height =130></button>
+<button id="3"><img src="이미지/에이스.png" width=130 height =130></button>
+<button id="4"><img src="이미지/오감.jpg" width=130 height =130></button>
+<br>
+<button id="5"><img src="이미지/오땅.jpeg" width=130 height =130></button>
+<button id="6"><img src="이미지/코코볼.png" width=130 height =130></button>
+<button id="7"><img src="이미지/치토스.jpg" width=130 height =130></button>
+<button id="8"><img src="이미지/하리보.png" width=130 height =130></button>
+<button id="9"><img src="이미지/포카칩.jpg" width=130 height =130></button>
+
+</div>
+
+<script>
+
+
+var tname = document.getElementsByTagName("button");
+
+var productID = ["p001","p002","p003","p004","p005","p006","p007","p008","p009","p010"]
+
+for(var i=0; i<=tname.length; i++){    
+		tname[i].onclick = function test() {
+ 		window.alert(productID[this.id]+" 상품")
+ 	}
+}
+
+</script>
+
+</body>
+</html>

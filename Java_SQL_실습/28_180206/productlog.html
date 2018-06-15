@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{	
+	text-align: center;
+}
+
+a{
+	margin-bottom: 20px;	
+	margin-right: 10px;
+	background-color : white;
+	box-shadow: 15px 8px 3px #666666;
+
+}
+img{
+	border : 1px solid black;
+	width : 130px;
+	height : 130px;
+}
+
+</style>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div>
+<h1 style="color : blue">원하는 상품을 클릭해주세요!</h1>
+<hr>
+
+<a id="p001"><img src="image/다이제.png"></a>
+<a id="p002"><img src="image/사탕.png"></a>
+<a id="p003"><img src="image/새우깡.png"></a>
+<a id="p004"><img src="image/에이스.png"></a>
+<a id="p005"><img src="image/오감.jpg"></a>
+<br>
+<a id="p006"><img src="image/오땅.jpeg"></a>
+<a id="p007"><img src="image/코코볼.png"></a>
+<a id="p008"><img src="image/치토스.jpg"></a>
+<a id="p009"><img src="image/하리보.png"></a>
+<a id="p010"><img src="image/포카칩.jpg"></a>
+
+</div>
+
+<script>
+ var x= document.getElementsByTagName("a")
+ for (var i in x){
+	 x[i].name = "ProductID"
+	 x[i].href = "/edu/basket2?ProductID="+x[i].id
+ }
+ 
+ 	
+
+</script>
+</body>
+</html>
