@@ -82,7 +82,7 @@ setInterval(function(){
 
 - 요청이 없을 시 서버 자원을 거의 먹지 않는다.
 
-- jQuery reference 발췌
+- jQuery Reference 발췌
 
   ```
   Applications built with Long Polling in mind attempt to offer realtime interaction, using a persistent or long-lasting HTTP connection between the server and the client.
