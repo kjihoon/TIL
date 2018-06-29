@@ -33,3 +33,25 @@ $("div li")
 $(".class").first()
 ```
 
+
+
+
+
+
+
+
+
+### 실습
+
+
+
+```javascript
+$("input[type='submit']").click(function(e){
+  var response = confirm("제출 하실건가요>");
+  if (!response){
+    //해당 코드가 실행되려면 response ==false
+    e.preventDefault();
+  }
+})
+```
+
