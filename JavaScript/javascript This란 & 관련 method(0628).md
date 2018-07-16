@@ -143,3 +143,4 @@ function bindedFunc(a,b){
 - `call`, `apply`는 this와 함께 args를 넣어 함수 실행
 - `bind`는 this만 선언하여 새로운 function 생성
 - this가 선언되지 않으면 this에 자동으로 window가 넣어짐
+

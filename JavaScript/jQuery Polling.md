@@ -2,7 +2,7 @@
 
 ### (Long polling을 이용한 ajax 재귀호출 최적화)
 
-
+(0716 - 수정)
 
 ###### Polling
 
